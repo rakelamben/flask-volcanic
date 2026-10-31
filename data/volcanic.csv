@@ -1,0 +1,221 @@
+name,location,country,latitude,longitude,date,frequency
+La Palma,Canary Is,Spain,28.57,-17.83,1677-11-22,3
+Zukur,Red Sea,Yemen,14.02,42.75,1679-09-21,1
+Vesuvius,Italy,Italy,40.821,14.426,1682-08-12,11
+Serua,Banda Sea,Pacific Ocean,-6.312,130.017,1692-06-04,1
+Etna,Italy,Italy,37.748,14.999,1693-01-09,17
+Hekla,Iceland-S,Iceland,63.983,-19.666,1693-02-13,6
+Banda Api,Banda Sea,Pacific Ocean,-4.523,129.881,1694-11-20,4
+Tenerife,Canary Is,Spain,28.271,-16.641,1706-05-05,1
+Fujisan,Honshu-Japan,Japan,35.361,138.728,1707-12-16,1
+Awu,Sangihe Is-Indonesia,Indonesia,3.689,125.447,1711-12-11,6
+Bardarbunga,Iceland-NE,Iceland,64.633,-17.516,1712-01-15,5
+Kelud,Java,Indonesia,-7.935,112.314,1716-07-20,12
+Taal,Luzon-Philippines,Philippines,14.002,120.993,1716-09-24,7
+Kirishimayama,Kyushu-Japan,Japan,31.934,130.862,1716-11-09,8
+Fuego,Guatemala,Guatemala,14.473,-90.88,1717-08-27,9
+Pico,Azores,Portugal,38.47,-28.4,1718-02-01,1
+Katla,Iceland-S,Iceland,63.633,-19.083,1721-05-11,4
+Asamayama,Honshu-Japan,Japan,36.406,138.523,1721-06-22,16
+Oraefajokull,Iceland-SE,Iceland,64.0,-16.65,1727-08-03,1
+Krafla,Iceland-NE,Iceland,65.715,-16.728,1729-06-30,2
+Lanzarote,Canary Is,Spain,29.03,-13.63,1730-09-01,1
+Oshima-Oshima,Hokkaido-Japan,Japan,41.51,139.367,1741-08-23,1
+Cotopaxi,Ecuador,Ecuador,-0.677,-78.436,1742-06-15,4
+Grimsvotn,Iceland-NE,Iceland,64.416,-17.316,1753-10-15,2
+Sao Jorge,Azores,Portugal,38.65,-28.08,1757-07-09,2
+Mayon,Luzon-Philippines,Philippines,13.257,123.685,1766-07-20,16
+Gamalama,Halmahera-Indonesia,Indonesia,0.8,127.33,1772-05-09,8
+Papandayan,Java,Indonesia,-7.32,107.73,1772-08-12,2
+Aira,Kyushu-Japan,Japan,31.593,130.657,1779-11-08,10
+Aogashima,Izu Is-Japan,Japan,32.458,139.759,1780-07-27,3
+Unzendake,Kyushu-Japan,Japan,32.761,130.299,1792-05-21,3
+Guntur,Java,Indonesia,-7.143,107.841,1800-10-08,1
+Chokaisan,Honshu-Japan,Japan,39.099,140.049,1801-08-14,1
+Soufriere St. Vincent,W Indies,St. Vincent & the Grenadines,13.33,-61.18,1812-04-27,4
+Tambora,Lesser Sunda Is,Indonesia,-8.25,118.0,1815-04-10,1
+Asosan,Kyushu-Japan,Japan,32.884,131.104,1816-07-05,10
+Ijen,Java,Indonesia,-8.058,114.242,1817-01-24,3
+Colima,Mexico,Mexico,19.514,-103.62,1818-02-05,2
+Westdahl,Aleutian Is,United States,54.516,-164.65,1820-03-01,1
+Toya,Hokkaido-Japan,Japan,42.544,140.839,1822-03-09,7
+Galunggung,Java,Indonesia,-7.25,108.058,1822-10-08,2
+Merapi,Java,Indonesia,-7.54,110.446,1822-12-27,21
+Shishaldin,Aleutian Is,United States,54.756,-163.97,1825-03-21,2
+Dieng Volcanic Complex,Java,Indonesia,-7.2,109.879,1826-10-11,9
+Avachinsky,Kamchatka,Russia,53.256,158.836,1827-06-27,2
+Kaba,Sumatra,Indonesia,-3.522,102.615,1833-11-24,1
+Cosiguina,Nicaragua,Nicaragua,12.98,-87.57,1835-01-20,2
+Unnamed,Chile-Is,Chile,-33.62,-76.83,1839-02-12,2
+Kilauea,Hawaiian Is,United States,19.421,-155.287,1840-05-30,13
+Ararat,Turkey,Turkey,39.7,44.3,1840-07-02,1
+Liamuiga,W Indies,St. Kitts & Nevis,17.37,-62.8,1843-02-08,1
+Soufriere Guadeloupe,W Indies,Guadeloupe,16.044,-61.664,1843-02-17,1
+Soputan,Sulawesi-Indonesia,Indonesia,1.112,124.737,1845-02-08,1
+"Ruiz, Nevado del",Colombia,Colombia,4.892,-75.324,1845-02-19,2
+Taupo,New Zealand,New Zealand,-38.82,176.0,1846-05-07,2
+Tangkuban Parahu,Java,Indonesia,-6.77,107.6,1846-05-27,1
+Esan,Hokkaido-Japan,Japan,41.805,141.166,1846-11-18,1
+Fogo,Cape Verde Is,Cape Verde,14.95,-24.35,1847-04-09,3
+Niuafo'ou,Tonga-SW Pacific,Tonga,-15.6,-175.63,1853-06-24,2
+Sheveluch,Kamchatka,Russia,56.653,161.36,1854-02-18,3
+Alaid,Kuril Is,Russia,50.861,155.565,1854-06-27,2
+Hokkaido-Komagatake,Hokkaido-Japan,Japan,42.063,140.677,1856-09-25,2
+Umboi,New Guinea-NE of,Papua New Guinea,-5.592,147.892,1857-04-17,1
+Midagahara,Honshu-Japan,Japan,36.571,137.59,1858-04-23,5
+Dubbi,Africa-NE,Eritrea,13.579,41.809,1861-05-07,1
+Kie Besi,Halmahera-Indonesia,Indonesia,0.32,127.4,1861-12-29,2
+Yasur,Vanuatu-SW Pacific,Vanuatu,-19.532,169.447,1863-08-17,5
+Santorini,Greece,Greece,36.404,25.396,1866-02-20,2
+Ofu-Olosega,Samoa-SW Pacific,United States,-14.175,-169.618,1866-09-12,1
+Zaozan [Zaosan],Honshu-Japan,Japan,38.144,140.44,1867-10-21,1
+Mauna Loa,Hawaiian Is,United States,19.475,-155.608,1868-04-03,3
+Lewotobi,Lesser Sunda Is,Indonesia,-8.542,122.775,1869-07-07,2
+Ruang,Sangihe Is-Indonesia,Indonesia,2.3,125.37,1871-03-03,1
+Camiguin,Mindanao-Philippines,Philippines,9.203,124.673,1871-04-30,3
+Ragang,Mindanao-Philippines,Philippines,7.691,124.507,1873-01-16,1
+Miyakejima,Izu Is-Japan,Japan,34.094,139.526,1874-07-03,4
+Askja,Iceland-NE,Iceland,65.033,-16.783,1875-03-29,1
+Okmok,Aleutian Is,United States,53.43,-168.13,1878-08-29,1
+Stromboli,Italy,Italy,38.789,15.213,1879-02-04,12
+Krakatau,Indonesia,Indonesia,-6.102,105.423,1883-08-27,7
+Augustine,Alaska-SW,United States,59.363,-153.43,1883-10-06,1
+Semeru,Java,Indonesia,-8.108,112.922,1885-04-18,20
+Purace,Colombia,Colombia,2.32,-76.4,1885-05-25,2
+Tungurahua,Ecuador,Ecuador,-1.467,-78.442,1886-01-11,6
+Okataina,New Zealand,New Zealand,-38.12,176.5,1886-06-10,4
+Ritter Island,New Guinea-NE of,Papua New Guinea,-5.519,148.115,1888-03-13,4
+Bandaisan,Honshu-Japan,Japan,37.601,140.072,1888-07-15,2
+Banua Wuhu,Sangihe Is-Indonesia,Indonesia,3.138,125.491,1889-09-06,3
+Sorikmarapi,Sumatra,Indonesia,0.686,99.539,1892-05-21,1
+Tofua,Tonga-SW Pacific,Tonga,-19.75,-175.07,1892-08-30,1
+Calbuco,Chile-S,Chile,-41.33,-72.618,1893-01-07,4
+Azumayama,Honshu-Japan,Japan,37.735,140.244,1893-06-07,1
+Karkar,New Guinea-NE of,Papua New Guinea,-4.647,145.976,1895-06-17,2
+Tinakula,Santa Cruz Is-SW Pac,Solomon Is.,-10.386,165.804,1897-03-26,3
+Dona Juana,Colombia,Colombia,1.5,-76.936,1899-11-13,2
+Adatarayama,Honshu-Japan,Japan,37.647,140.281,1900-07-17,2
+Epi,Vanuatu-SW Pacific,Vanuatu,-16.68,168.37,1901-08-09,2
+Pelee,W Indies,Martinique,14.809,-61.166,1902-05-05,6
+Izu-Torishima,Izu Is-Japan,Japan,30.484,140.303,1902-08-07,2
+Santa Maria,Guatemala,Guatemala,14.757,-91.552,1902-10-25,4
+Karthala,Indian O-W,Comoros,-11.75,43.38,1904-02-25,4
+Savai'i,Samoa-SW Pacific,Samoa,-13.612,-172.525,1905-08-04,8
+Alayta,Africa-NE,Ethiopia,12.888,40.573,1907-08-04,1
+Cameroon,Africa-W,Cameroon,4.203,9.17,1909-04-28,1
+Piparo,Trinidad,Trinidad,10.0,-61.0,1911-11-03,1
+Novarupta,Alaska Peninsula,United States,58.27,-155.157,1912-09-06,1
+Nyamulagira,Africa-C,"Congo, DRC",-1.408,29.2,1912-12-03,2
+Ambrym,Vanuatu-SW Pacific,Vanuatu,-16.25,168.12,1913-12-06,2
+Witori,New Britain-SW Pac,Papua New Guinea,-5.576,150.516,1914-01-18,1
+Whakaari/White Island,New Zealand,New Zealand,-37.52,177.18,1914-09-10,2
+"Lengai, Ol Doinyo",Africa-E,Tanzania,-2.764,35.914,1917-01-01,4
+San Salvador,El Salvador,El Salvador,13.734,-89.294,1917-06-07,1
+Popocatepetl,Mexico,Mexico,19.023,-98.622,1919-02-19,3
+Nasudake,Honshu-Japan,Japan,37.125,139.963,1919-07-06,2
+Izalco,El Salvador,El Salvador,13.813,-89.633,1920-10-29,1
+"Cendres, Ile des",SE Asia,Vietnam,10.158,109.014,1923-03-02,1
+Tokachidake,Hokkaido-Japan,Japan,43.418,142.686,1926-05-24,3
+Esjufjoll,Iceland-SE,Iceland,64.25,-16.583,1927-09-05,1
+Paluweh,Lesser Sunda Is,Indonesia,-8.32,121.708,1928-08-04,4
+Kusatsu-Shiranesan,Honshu-Japan,Japan,36.618,138.528,1932-10-01,4
+Kharimkotan,Kuril Is,Russia,49.12,154.508,1933-01-08,1
+Hakoneyama,Honshu-Japan,Japan,35.233,139.021,1933-05-10,5
+Kuchinoerabujima,Ryukyu Is,Japan,30.443,130.217,1933-12-24,1
+Bulusan,Luzon-Philippines,Philippines,12.769,124.056,1933-12-25,4
+Llaima,Chile-C,Chile,-38.692,-71.729,1937-02-09,1
+Rabaul,New Britain-SW Pac,Papua New Guinea,-4.271,152.203,1937-05-29,3
+Kick 'em Jenny,W Indies,Netherlands,12.3,-61.64,1939-07-24,2
+Karangetang,Sangihe Is-Indonesia,Indonesia,2.781,125.407,1940-06-20,10
+Michoacan-Guanajuato,Mexico,Mexico,19.85,-101.75,1943-02-20,1
+"Azul, Cerro",Galapagos,Ecuador,-0.92,-91.408,1943-04-13,1
+Cleveland,Aleutian Is,United States,52.825,-169.944,1944-06-10,1
+Sarychev Peak,Kuril Is,Russia,48.092,153.2,1946-11-13,1
+Akagisan,Honshu-Japan,Japan,36.56,139.193,1947-09-16,1
+Iliwerung,Lesser Sunda Is,Indonesia,-8.532,123.573,1948-04-07,3
+Villarrica,Chile-C,Chile,-39.42,-71.93,1949-01-01,4
+Lamington,New Guinea,Papua New Guinea,-8.95,148.15,1951-01-21,1
+Kita-Bayonnaise,Izu Is-Japan,Japan,32.1,139.85,1952-09-16,6
+St. Andrew Strait,Admiralty Is-SW Paci,Papua New Guinea,-2.38,147.35,1953-06-27,1
+Izu-Oshima,Izu Is-Japan,Japan,34.724,139.394,1953-10-05,3
+Ruapehu,New Zealand,New Zealand,-39.28,175.57,1953-12-24,1
+Bam,New Guinea-NE of,Papua New Guinea,-3.613,144.818,1954-08-03,1
+Carran-Los Venados,Chile-C,Chile,-40.35,-72.07,1955-07-26,1
+Bezymianny,Kamchatka,Russia,55.972,160.595,1956-03-30,1
+Vsevidof,Aleutian Is,United States,53.13,-168.693,1957-03-11,1
+Mahawu,Sulawesi-Indonesia,Indonesia,1.352,124.865,1958-07-12,1
+Taisetsuzan,Hokkaido-Japan,Japan,43.664,142.854,1958-07-21,2
+Kuwae,Vanuatu-SW Pacific,Vanuatu,-16.829,168.536,1958-10-07,1
+Puyehue-Cordon Caulle,Chile-C,Chile,-40.59,-72.117,1960-05-25,2
+Irazu,Costa Rica,Costa Rica,9.979,-83.852,1963-03-17,2
+Agung,Lesser Sunda Is,Indonesia,-8.343,115.508,1963-03-18,2
+Batur,Lesser Sunda Is,Indonesia,-8.242,115.375,1963-09-05,1
+Rincon de la Vieja,Costa Rica,Costa Rica,10.83,-85.324,1966-11-06,1
+Deception Island,Antarctica,Antarctica,-63.001,-60.652,1967-12-04,1
+Arenal,Costa Rica,Costa Rica,10.463,-84.703,1968-07-29,4
+Iya,Lesser Sunda Is,Indonesia,-8.891,121.641,1969-01-28,1
+Didicas,Luzon-N of,Philippines,19.077,122.202,1969-03-21,1
+Naruko,Honshu-Japan,Japan,38.729,140.734,1969-08-26,1
+Campi Flegrei,Italy,Italy,40.827,14.139,1970-03-02,2
+"Hudson, Cerro",Chile-S,Chile,-45.9,-72.97,1971-08-12,3
+"Fournaise, Piton de la",Indian O-W,Reunion,-21.244,55.708,1972-06-09,1
+Vestmannaeyjar,Iceland-S,Iceland,63.416,-20.266,1973-01-27,1
+Niigata-Yakeyama,Honshu-Japan,Japan,36.921,138.036,1974-07-28,1
+Sangay,Ecuador,Ecuador,-2.005,-78.341,1976-08-12,2
+Nyiragongo,Africa-C,"Congo, DRC",-1.52,29.25,1977-01-10,4
+Klyuchevskoy,Kamchatka,Russia,56.056,160.642,1977-08-02,2
+St. Helens,US-Washington,United States,46.2,-122.18,1980-05-18,1
+Hood,US-Oregon,United States,45.374,-121.695,1980-12-25,1
+"Chichon, El",Mexico,Mexico,17.36,-93.228,1982-03-29,3
+Colo,Sulawesi-Indonesia,Indonesia,-0.162,121.601,1983-07-23,1
+Sumisujima,Izu Is-Japan,Japan,31.44,140.051,1984-06-13,5
+Oku Volcanic Field,Africa-W,Cameroon,6.25,10.5,1984-08-15,2
+Ontakesan,Honshu-Japan,Japan,35.893,137.48,1984-09-14,2
+Akita-Yakeyama,Honshu-Japan,Japan,39.964,140.757,1986-05-08,1
+Pacaya,Guatemala,Guatemala,14.382,-90.601,1987-01-25,3
+Sirung,Lesser Sunda Is,Indonesia,-8.508,124.13,1987-12-01,1
+Lonquimay,Chile-C,Chile,-38.379,-71.586,1988-12-25,1
+Coropuna,Peru,Peru,-15.52,-72.65,1990-05-29,1
+Pinatubo,Luzon-Philippines,Philippines,15.13,120.35,1991-06-15,4
+Lokon-Empung,Sulawesi-Indonesia,Indonesia,1.358,124.792,1991-10-24,2
+"Negro, Cerro",Nicaragua,Nicaragua,12.506,-86.702,1992-04-10,1
+Marapi,Sumatra,Indonesia,-0.38,100.474,1992-07-05,2
+Spurr,Alaska-SW,United States,61.299,-152.251,1992-09-17,1
+Galeras,Colombia,Colombia,1.22,-77.37,1993-01-14,1
+Wurlali,Banda Sea,Indonesia,-7.125,128.675,1993-01-21,1
+Guagua Pichincha,Ecuador,Ecuador,-0.171,-78.598,1993-03-12,2
+"Huila, Nevado del",Colombia,Colombia,2.93,-76.03,1994-06-06,3
+Rinjani,Lesser Sunda Is,Indonesia,-8.42,116.47,1994-11-03,2
+Yakedake,Honshu-Japan,Japan,36.227,137.587,1995-02-11,1
+Kelimutu,Lesser Sunda Is,Indonesia,-8.77,121.82,1995-05-15,1
+Parker,Mindanao-Philippines,Philippines,6.113,124.892,1995-09-06,1
+Karymsky,Kamchatka,Russia,54.049,159.443,1996-01-02,1
+Kanlaon,Philippines-C,Philippines,10.412,123.132,1996-08-10,1
+Maderas,Nicaragua,Nicaragua,11.446,-85.515,1996-09-27,1
+Manam,New Guinea-NE of,Papua New Guinea,-4.08,145.037,1996-12-03,7
+Soufriere Hills,W Indies,Montserrat,16.72,-62.18,1997-06-25,6
+Hakkodasan,Honshu-Japan,Japan,40.659,140.877,1997-07-12,1
+San Cristobal,Nicaragua,Nicaragua,12.702,-87.004,1998-10-30,1
+Reventador,Ecuador,Ecuador,-0.077,-77.656,2002-11-03,1
+Egon,Lesser Sunda Is,Indonesia,-8.676,122.455,2004-01-29,1
+Tengger Caldera,Java,Indonesia,-7.942,112.95,2004-06-08,2
+Santa Ana,El Salvador,El Salvador,13.853,-89.63,2005-10-01,1
+Raoul Island,Kermadec Is,New Zealand,-29.27,-177.92,2006-03-17,1
+Salak,Java,Indonesia,-6.716,106.733,2007-07-07,1
+"Tair, Jebel at",Red Sea,Yemen,15.55,41.83,2007-09-30,1
+Chaiten,Chile-S,Chile,-42.833,-72.646,2008-05-02,1
+Kasatochi,Aleutian Is,United States,52.177,-175.508,2008-08-08,1
+Redoubt,Alaska-SW,United States,60.485,-152.742,2009-03-23,1
+Eyjafjallajokull,Iceland-S,Iceland,63.633,-19.633,2010-03-31,1
+Zealandia Bank,Mariana Is-C Pacific,United States,16.88,145.85,2010-05-29,1
+Sinabung,Sumatra,Indonesia,3.17,98.392,2010-08-30,10
+Nabro,Africa-NE,Eritrea,13.37,41.7,2011-06-22,1
+Tolbachik,Kamchatka,Russia,55.832,160.326,2012-12-12,1
+Ubinas,Peru,Peru,-16.355,-70.903,2013-09-01,1
+Yellowstone,US-Wyoming,United States,44.43,-110.67,2016-06-09,1
+Ambae,Vanuatu-SW Pacific,Vanuatu,-15.389,167.835,2017-09-23,2
+Kadovar,New Guinea-NE of,Papua New Guinea,-3.608,144.588,2018-01-05,2
+Ulawun,New Britain-SW Pac,Papua New Guinea,-5.05,151.33,2019-06-26,1
+Hunga Tonga-Hunga Ha'apai,Tonga-SW Pacific,Tonga,-20.536,-175.382,2022-01-15,1
+Bagana,Bougainville-SW Paci,Papua New Guinea,-6.137,155.196,2023-07-07,1
+Reykjanes,Iceland-SW,Iceland,63.817,-22.717,2023-12-18,1

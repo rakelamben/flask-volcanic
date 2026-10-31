@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dashboard Erupsi Gunung Berapi</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+  <style>
+    :root { color-scheme: light; font-family: Inter, ui-sans-serif, system-ui, sans-serif; color: #182b36; background: #f3f7f8; }
+    * { box-sizing: border-box; }
+    body { margin: 0; min-height: 100vh; }
+    header { background: linear-gradient(120deg, #102d3a, #145d61); color: #fff; padding: 24px max(24px, calc((100% - 1200px) / 2)); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px; }
+    h1 { font-size: clamp(20px, 3vw, 28px); margin: 0 0 5px; letter-spacing: -.03em; }
+    .subjudul { margin: 0; color: #c3d9d9; font-size: 13px; }
+    .filter { display: grid; gap: 5px; font-size: 12px; color: #d7e6e5; }
+    select { min-width: 130px; border: 1px solid #cbd9dc; border-radius: 8px; padding: 9px 30px 9px 12px; background: #fff; color: #182b36; font: inherit; }
+    main { max-width: 1248px; padding: 24px; margin: 0 auto; display: grid; gap: 18px; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .stat { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px; grid-column: 1 / -1; }
+    .kartu { min-width: 0; background: #fff; border: 1px solid #e6edef; border-radius: 14px; padding: 18px; box-shadow: 0 5px 18px rgba(25, 55, 66, .045); }
+    .stat .kartu { padding: 17px 19px; }
+    .label-stat { color: #627680; font-size: 12px; font-weight: 600; }
+    .angka { margin-top: 8px; font-size: clamp(22px, 3vw, 30px); line-height: 1.15; font-weight: 750; color: #087f75; overflow-wrap: anywhere; }
+    .stat .kartu:last-child .angka { font-size: clamp(19px, 2.5vw, 26px); }
+    h2 { font-size: 15px; margin: 0; letter-spacing: -.01em; }
+    .judul-kartu { margin-bottom: 15px; }
+    .grafik { position: relative; height: 290px; }
+    .lebar { grid-column: 1 / -1; }
+    #pesan-error { display: none; grid-column: 1 / -1; padding: 12px 15px; border-radius: 9px; color: #8d2929; background: #fff0ef; border: 1px solid #f3d0cd; font-size: 13px; }
+    @media (max-width: 760px) { main { padding: 16px; gap: 12px; } .stat { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; } }
+    @media (max-width: 560px) { header { padding: 20px 16px; } main { grid-template-columns: 1fr; } .lebar { grid-column: auto; } .grafik { height: 260px; } }
+  </style>
+</head>
+<body>
+  <header>
+    <div>
+      <h1>Aktivitas Gunung Berapi</h1>
+    </div>
+    <label class="filter">Tahun
+      <select id="tahun">
+        <option value="">Semua</option>
+        {% for a in tahun %}
+        <option value="{{ a }}">{{ a }}</option>
+        {% endfor %}
+      </select>
+    </label>
+  </header>
+
+  <main>
+    <section class="stat">
+      <div class="kartu"><div class="label-stat">Gunung berapi</div><div class="angka" id="jumlah-gunung">-</div></div>
+      <div class="kartu"><div class="label-stat">Negara tercatat</div><div class="angka" id="jumlah-negara">-</div></div>
+      <div class="kartu"><div class="label-stat">Total frekuensi erupsi</div><div class="angka" id="total-erupsi">-</div></div>
+      <div class="kartu"><div class="label-stat">Catatan kejadian</div><div class="angka" id="jumlah-catatan">-</div></div>
+    </section>
+    <div id="pesan-error" role="alert"></div>
+    <section class="kartu">
+      <div class="judul-kartu"><h2>10 Gunung dengan Frekuensi Tertinggi</h2></div>
+      <div class="grafik"><canvas id="grafikGunung"></canvas></div>
+    </section>
+    <section class="kartu">
+      <div class="judul-kartu"><h2>Frekuensi Erupsi per Negara</h2></div>
+      <div class="grafik"><canvas id="grafikNegara"></canvas></div>
+    </section>
+    <section class="kartu lebar">
+      <div class="judul-kartu"><h2>Tren Frekuensi per Dekade</h2></div>
+      <div class="grafik"><canvas id="grafikTren"></canvas></div>
+    </section>
+    <section class="kartu lebar">
+      <div class="judul-kartu"><h2>Sebaran Lokasi Gunung Berapi</h2></div>
+      <div class="grafik"><canvas id="grafikLokasi"></canvas></div>
+    </section>
+  </main>
+
+  <script>
+    Chart.defaults.maintainAspectRatio = false;
+    Chart.defaults.color = "#627680";
+    Chart.defaults.font.family = "Inter, ui-sans-serif, system-ui, sans-serif";
+    const grafik = {};
+    const angkaFormat = new Intl.NumberFormat("id-ID");
+
+    function gambar(id, config) {
+      if (grafik[id]) grafik[id].destroy();
+      grafik[id] = new Chart(document.getElementById(id), config);
+    }
+
+    async function ambilJson(url) {
+      const response = await fetch(url);
+      if (!response.ok) throw new Error(`Permintaan ${url} gagal (${response.status})`);
+      return response.json();
+    }
+
+    function opsiBatang() {
+      return {
+        indexAxis: "y",
+        plugins: { legend: { display: false } },
+        scales: {
+          x: { beginAtZero: true, grid: { color: "#edf1f2" }, border: { display: false } },
+          y: { grid: { display: false }, border: { display: false } }
+        }
+      };
+    }
+
+    async function muatData() {
+      const tahun = document.getElementById("tahun").value;
+      const q = tahun ? "?tahun=" + tahun : "";
+      const pesanError = document.getElementById("pesan-error");
+      pesanError.style.display = "none";
+
+      try {
+        const [ringkasan, gunung, negara, tren, lokasi] = await Promise.all([
+          ambilJson("/api/ringkasan" + q),
+          ambilJson("/api/freq-gunung" + q),
+          ambilJson("/api/distribusi-negara" + q),
+          ambilJson("/api/tren-dekade" + q),
+          ambilJson("/api/lokasi" + q)
+        ]);
+        document.getElementById("jumlah-gunung").textContent = angkaFormat.format(ringkasan.gunung);
+        document.getElementById("jumlah-negara").textContent = angkaFormat.format(ringkasan.negara);
+        document.getElementById("total-erupsi").textContent = angkaFormat.format(ringkasan.total_erupsi);
+        document.getElementById("jumlah-catatan").textContent = angkaFormat.format(ringkasan.catatan);
+
+        gambar("grafikGunung", {
+          type: "bar",
+          data: { labels: gunung.labels, datasets: [{ label: "Frekuensi erupsi", data: gunung.data, backgroundColor: "#168f83", borderRadius: 5, maxBarThickness: 24 }] },
+          options: opsiBatang()
+        });
+
+        gambar("grafikNegara", {
+          type: "bar",
+          data: { labels: negara.labels, datasets: [{ label: "Frekuensi erupsi", data: negara.data, backgroundColor: "#e49a52", borderRadius: 5, maxBarThickness: 24 }] },
+          options: opsiBatang()
+        });
+
+        gambar("grafikTren", {
+          type: "line",
+          data: { labels: tren.labels, datasets: [{ label: "Frekuensi erupsi", data: tren.data, borderColor: "#168f83", backgroundColor: "rgba(22, 143, 131, .13)", fill: true, tension: .28, pointRadius: 3, pointHoverRadius: 6 }] },
+          options: {
+            plugins: { legend: { display: false } },
+            scales: {
+              x: { grid: { display: false }, border: { display: false }, ticks: { maxTicksLimit: 12 } },
+              y: { beginAtZero: true, grid: { color: "#edf1f2" }, border: { display: false } }
+            }
+          }
+        });
+
+        gambar("grafikLokasi", {
+          type: "scatter",
+          data: { datasets: [{
+            label: "Gunung berapi",
+            data: lokasi.data,
+            backgroundColor: "rgba(17, 132, 124, .62)",
+            borderColor: "#087f75",
+            pointRadius: context => 3 + Math.min(Math.sqrt(context.raw.frequency), 5),
+            pointHoverRadius: 8
+          }] },
+          options: {
+            plugins: {
+              legend: { display: false },
+              tooltip: { callbacks: { label: context => {
+                const titik = context.raw;
+                return `${titik.name} (${titik.country}) · frekuensi ${titik.frequency}`;
+              } } }
+            },
+            scales: {
+              x: { min: -180, max: 180, title: { display: true, text: "Bujur" }, grid: { color: "#edf1f2" }, border: { display: false } },
+              y: { min: -90, max: 90, title: { display: true, text: "Lintang" }, grid: { color: "#edf1f2" }, border: { display: false } }
+            }
+          }
+        });
+      } catch (error) {
+        pesanError.textContent = `Gagal memuat visualisasi: ${error.message}`;
+        pesanError.style.display = "block";
+      }
+    }
+
+    document.getElementById("tahun").addEventListener("change", muatData);
+    muatData();
+  </script>
+</body>
+</html>
